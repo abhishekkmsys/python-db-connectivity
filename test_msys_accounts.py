@@ -6,8 +6,6 @@ import logging
 
 class TestMsysAccounts(unittest.TestCase):
 
-    # input_data = ''
-
     @classmethod
     def setUpClass(cls):
         with open('input_account_data.json') as f:

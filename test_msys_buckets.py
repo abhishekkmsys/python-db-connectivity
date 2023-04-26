@@ -12,7 +12,7 @@ class TestMsysBuckets(unittest.TestCase):
             cls.input_data = json.load(f)
 
     # set up the logging configuration
-        logging.basicConfig(filename='test_buckets.log', level=logging.INFO, filemode='w', format='%(asctime)s %(levelname)s %(message)s', datefmt='%Y-%m-%d %H:%M:%S')
+        logging.basicConfig(filename='test_accounts.log', level=logging.INFO, filemode='w', format='%(asctime)s %(levelname)s %(message)s', datefmt='%Y-%m-%d %H:%M:%S')
 
     def setUp(self):
         self.server = config.server

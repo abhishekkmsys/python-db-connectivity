@@ -1,0 +1,26 @@
+2023-04-26 18:24:42 INFO Logging for test_bucketID
+2023-04-26 18:24:42 INFO Checking for Comparision of BucketID from Msys_Buckets Table and BucketID from Msys_Objects Table
+2023-04-26 18:24:42 INFO Bucketid 'bucket677562552' from Objects Table found in Buckets table.
+2023-04-26 18:24:42 INFO Bucketid 'bucket213518639' from Objects Table found in Buckets table.
+2023-04-26 18:24:42 INFO Bucketid 'bucket318628394' from Objects Table found in Buckets table.
+2023-04-26 18:24:42 INFO Bucketid 'bucket318628394' from Objects Table found in Buckets table.
+2023-04-26 18:24:42 INFO Bucketid 'bucket213518639' from Objects Table found in Buckets table.
+2023-04-26 18:24:42 INFO Logging for test_bucket_name_from_input_file
+2023-04-26 18:24:42 INFO To check for the existence of Bucket Names from Input JSON Data File
+2023-04-26 18:24:42 INFO Bucket name 'TestBucket3' found in table.
+2023-04-26 18:24:42 INFO Bucket name 'TestBucket1' found in table.
+2023-04-26 18:24:42 INFO Bucket name 'TestBucket1' found in table.
+2023-04-26 18:24:42 INFO Bucket name 'TestBucket4' found in table.
+2023-04-26 18:24:42 INFO Bucket name 'TestBucket4' found in table.
+2023-04-26 18:24:42 ERROR Bucket name 'TestBucket8' not found in table.
+2023-04-26 18:24:42 ERROR Bucket name 'TestBucket10' not found in table.
+2023-04-26 18:24:42 INFO Logging for test_creationTimeStamp
+2023-04-26 18:24:42 INFO Checking TimeStamp generated value is not NUll
+2023-04-26 18:24:42 INFO Logging for test_objectID
+2023-04-26 18:24:42 INFO Checking ObjectID generated value is not NUll
+2023-04-26 18:24:42 INFO Logging for test_object_file
+2023-04-26 18:24:42 INFO Checking for Object File Names from Input Json Data file.
+2023-04-26 18:24:42 INFO ['test1.txt', 'test2.txt', 'test4.txt', 'test5.txt', 'test3.txt']
+2023-04-26 18:24:42 ERROR Assertion error: Items in the second set but not the first:
+'test6.txt'
+'test8.txt'

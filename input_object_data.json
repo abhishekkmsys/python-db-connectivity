@@ -1,0 +1,12 @@
+[
+    {"BucketName":"TestBucket3", "ObjectName":"test1.txt"},
+    {"BucketName":"TestBucket1", "ObjectName":"test2.txt"},
+    {"BucketName":"TestBucket1", "ObjectName":"test3.txt"},
+    {"BucketName":"TestBucket4", "ObjectName":"test4.txt"},
+    {"BucketName":"TestBucket4", "ObjectName":"test5.txt"},
+    {"BucketName":"TestBucket8", "ObjectName":"test6.txt"},
+    {"BucketName":"TestBucket10", "ObjectName":"test8.txt"}
+]
+
+
+
