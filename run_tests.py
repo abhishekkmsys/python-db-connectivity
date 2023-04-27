@@ -3,7 +3,7 @@ import logging
 import io
 
 # configure the logger
-logging.basicConfig(filename='test.log', level=logging.INFO)
+logging.basicConfig(filename='all_tests.log', level=logging.INFO)
 
 # create a test suite
 test_suite = unittest.TestLoader().discover('.', pattern='test*.py')
