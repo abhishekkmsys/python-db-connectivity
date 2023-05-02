@@ -3,26 +3,24 @@ import json
 import pyodbc
 import config
 import logging 
+from helper_functions import load_json, setup_logging
+import db_connection 
+
 
 class TestMSysObjects(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        with open('input_object_data.json') as f:
-            cls.input_data = json.load(f)
-
-        # set up the logging configuration
-        logging.basicConfig(filename='test_objects.log', level=logging.INFO, filemode='w', format='%(asctime)s %(levelname)s %(message)s', datefmt='%Y-%m-%d %H:%M:%S')
+        cls.input_data = load_json('input_object_data.json')
+        setup_logging('test_objects.log')
 
     def setUp(self):
-        self.server = config.server
-        self.database = config.database
-        self.username = config.username
-        self.password = config.password
 
         try:
-            # set up connection and connect to server
-            self.connection = pyodbc.connect(f"DRIVER={{ODBC Driver 17 for SQL Server}}; SERVER={self.server}; DATABASE={self.database};UID={self.username};PWD={self.password}")
+            # create connection
+            self.connection = db_connection.create_connection()
+
+            # create cursor object
             self.bucket_cursor = self.connection.cursor()
             self.object_cursor = self.connection.cursor()
 
@@ -34,6 +32,10 @@ class TestMSysObjects(unittest.TestCase):
 
         except pyodbc.Error as err:
             logging.error("Database Connectivity Failed. %s", err) 
+            self.skipTest(f"Failed to connect to database. Error message: {err}")
+
+        except Exception as err:
+            logging.error(f"An error occurred while connecting to the database. {err}")
             self.skipTest(f"Failed to connect to database. Error message: {err}")
 
     def test_bucket_name_from_input_file(self):
