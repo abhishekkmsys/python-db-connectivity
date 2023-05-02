@@ -9,8 +9,8 @@ class TestMsysUsers(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        cls.input_data = load_json('input_user_data.json')
-        setup_logging('test_users.log')
+        cls.input_data = load_json('input_data/input_user_data.json')
+        setup_logging('logs/test_users.log')
 
     def setUp(self):
         try:

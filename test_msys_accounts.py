@@ -9,8 +9,8 @@ class TestMsysAccounts(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        cls.input_data = load_json('input_account_data.json')
-        setup_logging('test_accounts.log')
+        cls.input_data = load_json('input_data/input_account_data.json')
+        setup_logging('logs/test_accounts.log')
 
     def setUp(self):
         

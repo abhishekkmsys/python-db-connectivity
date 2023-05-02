@@ -11,8 +11,8 @@ class TestMSysObjects(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        cls.input_data = load_json('input_object_data.json')
-        setup_logging('test_objects.log')
+        cls.input_data = load_json('input_data/input_object_data.json')
+        setup_logging('logs/test_objects.log')
 
     def setUp(self):
 

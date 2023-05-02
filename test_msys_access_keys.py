@@ -10,7 +10,7 @@ class TestMsysAccessKeys(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        setup_logging('test_accesskeys.log')
+        setup_logging('logs/test_accesskeys.log')
 
     def setUp(self):
 

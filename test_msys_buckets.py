@@ -10,8 +10,8 @@ class TestMsysBuckets(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        cls.input_data = load_json('input_bucket_data.json')
-        setup_logging('test_buckets.log')
+        cls.input_data = load_json('input_data/input_bucket_data.json')
+        setup_logging('logs/test_buckets.log')
 
     def setUp(self):
 

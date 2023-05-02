@@ -1,5 +1,0 @@
-2023-04-28 17:33:53 INFO Test Method : test_access_secret_acc_id checks for whether unique generated between Access id, Account id and secret id, Account id
-2023-04-28 17:33:53 INFO Test Method : test_creationTimestamp Checks for generated Timestamp is not null
-2023-04-28 17:33:53 INFO Test Method : test_lastUsedTimeStamp Checks for generated last used Timestamp is not null
-2023-04-28 17:33:54 INFO Test Method : test_status checks whether status of access Key is ACTIVE or not..
-2023-04-28 17:33:54 INFO Test Method: test_userID checks whether userID created is NUll or Not
