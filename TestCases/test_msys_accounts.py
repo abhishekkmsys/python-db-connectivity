@@ -1,15 +1,15 @@
 import unittest
 import logging
 import pyodbc
-import config
-from helper_functions import load_json, setup_logging
-import db_connection
+import configurations.config as config
+from utilities.helper_functions import load_json, setup_logging
+import Database_Connection.db_connection as db_connection
 
 class TestMsysAccounts(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        cls.input_data = load_json('input_data/input_account_data.json')
+        cls.input_data = load_json('TestData/input_account_data.json')
         setup_logging('logs/test_accounts.log')
 
     def setUp(self):

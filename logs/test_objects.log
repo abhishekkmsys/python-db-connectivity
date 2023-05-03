@@ -1,0 +1,26 @@
+2023-05-03 13:28:47 INFO Logging for test_bucketID
+2023-05-03 13:28:47 INFO Checking for Comparision of BucketID from Msys_Buckets Table and BucketID from Msys_Objects Table
+2023-05-03 13:28:47 INFO Logging for test_bucket_name_from_input_file
+2023-05-03 13:28:47 INFO To check for the existence of Bucket Names from Input JSON Data File
+2023-05-03 13:28:47 ERROR Bucket name 'TestBucket3' not found in table.
+2023-05-03 13:28:47 ERROR Bucket name 'TestBucket1' not found in table.
+2023-05-03 13:28:47 ERROR Bucket name 'TestBucket1' not found in table.
+2023-05-03 13:28:47 ERROR Bucket name 'TestBucket4' not found in table.
+2023-05-03 13:28:47 ERROR Bucket name 'TestBucket4' not found in table.
+2023-05-03 13:28:47 ERROR Bucket name 'TestBucket8' not found in table.
+2023-05-03 13:28:47 ERROR Bucket name 'TestBucket10' not found in table.
+2023-05-03 13:28:47 INFO Logging for test_creationTimeStamp
+2023-05-03 13:28:47 INFO Checking TimeStamp generated value is not NUll
+2023-05-03 13:28:47 INFO Logging for test_objectID
+2023-05-03 13:28:47 INFO Checking ObjectID generated value is not NUll
+2023-05-03 13:28:47 INFO Logging for test_object_file
+2023-05-03 13:28:47 INFO Checking for Object File Names from Input Json Data file.
+2023-05-03 13:28:47 INFO []
+2023-05-03 13:28:47 ERROR Assertion error: Items in the second set but not the first:
+'test5.txt'
+'test1.txt'
+'test8.txt'
+'test4.txt'
+'test3.txt'
+'test6.txt'
+'test2.txt'

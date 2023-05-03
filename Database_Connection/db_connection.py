@@ -1,6 +1,6 @@
 import pyodbc
 import logging
-import config
+import configurations.config as config
 
 def create_connection():
     try:

@@ -1,16 +1,16 @@
 import unittest
 import json 
 import pyodbc
-import config
+import configurations.config as config
 import logging 
-from helper_functions import load_json, setup_logging
-import db_connection 
+from utilities.helper_functions import load_json, setup_logging
+import Database_Connection.db_connection as db_connection 
 
 class TestMsysBuckets(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        cls.input_data = load_json('input_data/input_bucket_data.json')
+        cls.input_data = load_json('TestData/input_bucket_data.json')
         setup_logging('logs/test_buckets.log')
 
     def setUp(self):

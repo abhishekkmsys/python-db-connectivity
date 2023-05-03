@@ -1,0 +1,10 @@
+2023-05-03 13:28:37 INFO Test Method : test_arn to check for generated arn is not null
+2023-05-03 13:28:37 INFO Test Method : test_bucketAccID_accessID_secretkey , to map bucket Account Id with Access Key Id and secret Id
+2023-05-03 13:28:37 INFO Test Method : test_bucketID to check for generated Bucket Id is not null
+2023-05-03 13:28:37 INFO Test Method: test_bucketName to compare for bucket Names present in db Table with Input User Data
+2023-05-03 13:28:37 ERROR AssertionError : Items in the second set but not the first:
+'TestBucket1'
+'TestBucket4'
+'TestBucket300'
+'TestBucket100'
+2023-05-03 13:28:37 INFO Test Method : test_creationTimestamp to check for creation Time stamp is not null
