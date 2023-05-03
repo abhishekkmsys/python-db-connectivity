@@ -99,7 +99,7 @@ class TestMsysAccessKeys(unittest.TestCase):
         logging.info("Test Method: test_userID checks whether userID created is NUll or Not") 
         try:
             self.userID = [row[6] for row in self.rows]
-            print(self.userID)
+            # print(self.userID)
             for element in self.userID:
                 with self.subTest(element = element):
                     self.assertIsNone(element) 
